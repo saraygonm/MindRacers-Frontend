@@ -74,14 +74,14 @@ const Lobby = ({ gameName, userName }) => {
         sendMessage('/app/startGame', gameName);
     };
 
-    const handleSpinWheel = () => {
+    /*const handleSpinWheel = () => {
         if (userName === currentPlayer) {
             setShowQuestion(false);
             sendMessage('/app/spinWheel', gameName);
         } else {
             alert(`Esperando a que ${currentPlayer} gire la ruleta.`);
         }
-    };
+    };*/
 
     const handleAnswerSubmit = (answer) => {
         if (showQuestion) {
